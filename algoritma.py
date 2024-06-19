@@ -21,3 +21,5 @@ def pangkat(angka1: int, angka2: int) -> int:
   if angka2 == 1:
     return angka1
   return angka1 * pangkat(angka1,angka2 - 1)
+
+pengurangan = lambda angka1, angka2: angka1 - angka2
