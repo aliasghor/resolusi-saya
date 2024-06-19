@@ -17,7 +17,7 @@ class Human:
 
     def greet(self, other) -> str:
         return f"{self.name} greets {other.name}"
-    
+      
     def is_adult(self) -> bool:
         """A method to determine wheter the human is an adult or not."""
         return self.human_is_adult(self.age)
