@@ -28,7 +28,7 @@ class Human:
         return self.age
       
     def is_adult(self) -> bool:
-        """A method to determine wheter the human is an adult or not."""
+        """An instance method to determine wheter the human is an adult or not."""
         return self.human_is_adult(self.age)
     
     @staticmethod
