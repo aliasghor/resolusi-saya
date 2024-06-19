@@ -1,4 +1,4 @@
-# Sebuah kelas sederhana untuk mempresentasikan manusia
+# A simple Human class that represents human (e.g., their names, behaviour to greet, and determining if the human is an adult).
 class Human:
     def __init__(self, name: str, age: int) -> None:
         if not isinstance(name, str):
