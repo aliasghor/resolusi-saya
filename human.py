@@ -1,4 +1,7 @@
 # A simple Human class that represents human (e.g., their names, behaviour to greet, and determining if the human is an adult).
+
+from datetime import date
+
 class Human:
     def __init__(self, name: str, age: int) -> None:
         if not isinstance(name, str):
@@ -16,7 +19,13 @@ class Human:
         return f"{type(self).__name__}('{self.name}', {self.age})"
 
     def greet(self, other) -> str:
+        """An instance method to greet another person's name."""
         return f"{self.name} greets {other.name}"
+    
+    def borned(self) -> int:
+        """An instance method to know person's born year."""
+        self.age = date.today().year - self.age
+        return self.age
       
     def is_adult(self) -> bool:
         """A method to determine wheter the human is an adult or not."""
