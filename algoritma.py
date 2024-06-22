@@ -1,4 +1,4 @@
-# An algorithm mathematics module
+# An algorithm module
 
 def faktorial(angka: int) -> int:
   """Sebuah algoritma untuk menghitung faktorial berdasarkan argument angka."""
