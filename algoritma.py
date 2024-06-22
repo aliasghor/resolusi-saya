@@ -40,4 +40,15 @@ def find_duplicate(iter: list, *, target: int) -> bool:
       if iter[i] == iter[j]:
         return True
   return False
-  
+
+def fibonacci(num: int) -> list:
+    """A function to count fibonacci number."""
+    if not isinstance(num, int):
+        raise TypeError(f"Error, expeceted the argument to be an int! Got {type(num).__name__}")
+    
+    result = []
+    a, b = 0, 1
+    while a < num:
+        result.append(a)
+        a, b = b, a + b
+    return result
