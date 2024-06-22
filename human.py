@@ -1,4 +1,4 @@
-# A simple Human class that represents human (e.g., their names, behaviour to greet, and determining if the human is an adult).
+# A simple Human class module that represents human (e.g., their names, behaviour to greet, and determining if the human is an adult).
 
 from datetime import date
 
@@ -17,6 +17,9 @@ class Human:
     
     def __repr__(self) -> str:
         return f"{type(self).__name__}('{self.name}', {self.age})"
+    
+    def __eq__(self, value: object) -> bool:
+        return self.__dict__ == value.__dict__
 
     def greet(self, other) -> str:
         """An instance method to greet another person's name."""
@@ -35,3 +38,4 @@ class Human:
     def human_is_adult(persons_age: int) -> bool:
         """A static method to calculate human adulthood ages."""
         return persons_age > 18
+    
