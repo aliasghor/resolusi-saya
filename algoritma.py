@@ -41,5 +41,3 @@ def find_duplicate(iter: list, *, target: int) -> bool:
         return True
   return False
   
-
-pengurangan = lambda angka1, angka2: angka1 - angka2
